@@ -1,1 +1,2 @@
 Rental Management
+Rental Management Module

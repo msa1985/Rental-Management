@@ -1,7 +1,7 @@
 app_name = "rental_management"
 app_title = "Rental Management"
 app_publisher = "Muhannad Saleh"
-app_description = "This is a frappe app for managing rental vehicles intigrated with erpnext"
+app_description = "This is a frappe app for managing rental vehicles integrated with erpnext"
 app_email = "mohaned.awesome@gmail.com"
 app_license = "mit"
 # required_apps = []
@@ -133,23 +133,24 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"rental_management.tasks.all"
-#	],
-#	"daily": [
-#		"rental_management.tasks.daily"
-#	],
-#	"hourly": [
-#		"rental_management.tasks.hourly"
-#	],
-#	"weekly": [
-#		"rental_management.tasks.weekly"
-#	],
-#	"monthly": [
-#		"rental_management.tasks.monthly"
-#	],
-# }
+scheduler_events = {
+	# "all": [
+	# 	"rental_management.tasks.all"
+	# ],
+	"daily": [
+		# "rental_management.tasks.daily",
+        "rental_management.rental_management_module.utils.utils.check_lease_agreements"
+	],
+	# "hourly": [
+	# 	"rental_management.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"rental_management.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"rental_management.tasks.monthly"
+	# ],
+}
 
 # Testing
 # -------
@@ -219,3 +220,11 @@ app_license = "mit"
 # auth_hooks = [
 #	"rental_management.auth.validate"
 # ]
+
+# Fixtures to export
+# --------------------------------
+fixtures = [
+    {
+        "doctype": "Custom HTML Block"
+    }
+]

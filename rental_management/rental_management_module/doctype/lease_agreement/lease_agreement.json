@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{L}-{customer}-{#}",
+ "creation": "2024-12-21 23:44:53.163253",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lease_agreement_data_section",
+  "customer",
+  "customer_name",
+  "vehicle",
+  "rental_rate",
+  "sales_invoice",
+  "column_break_bnyb",
+  "lease_start_date",
+  "lease_end_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "lease_agreement_data_section",
+   "fieldtype": "Section Break",
+   "label": "Lease Agreement Data"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicles",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "lease_start_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Lease Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bnyb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lease_end_date",
+   "fieldtype": "Datetime",
+   "label": "Lease End Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "vehicle.rental_rate",
+   "fieldname": "rental_rate",
+   "fieldtype": "Currency",
+   "label": "Rental Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nTerminated\nCompleted"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-22 23:42:31.323587",
+ "modified_by": "Administrator",
+ "module": "Rental Management Module",
+ "name": "Lease Agreement",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,52 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": "Lease Agreement",
+   "fieldtype": "Data",
+   "label": "Lease Agreement",
+   "width": 0
+  },
+  {
+   "fieldname": "Sales Invoice",
+   "fieldtype": "Data",
+   "label": "Sales Invoice",
+   "width": 0
+  },
+  {
+   "fieldname": "Total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "width": 0
+  },
+  {
+   "fieldname": "Final Tota",
+   "fieldtype": "Currency",
+   "label": "Final Total",
+   "width": 0
+  }
+ ],
+ "creation": "2024-12-23 00:32:37.548521",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-12-23 00:36:13.156401",
+ "modified_by": "Administrator",
+ "module": "Rental Management Module",
+ "name": "Rental Income Summary",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\r\n  `tabLease Agreement`.name AS `Lease Agreement`,\r\n  `tabSales Invoice`.name AS `Sales Invoice`,\r\n  `tabSales Invoice`.grand_total AS Total,\r\n  SUM(`tabSales Invoice`.grand_total) AS `Final Total`,\r\n  `tabSales Invoice`.status\r\nFROM `tabLease Agreement`\r\n  INNER JOIN `tabSales Invoice`\r\n    ON `tabLease Agreement`.name = `tabSales Invoice`.custom_lease_agreement\r\nWHERE `tabSales Invoice`.status = 'paid'",
+ "ref_doctype": "Lease Agreement",
+ "report_name": "Rental Income Summary",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "charts": [
+  {
+   "chart_name": "Total Revenue",
+   "label": "Total Revenue"
+  }
+ ],
+ "content": "[{\"id\":\"p93riuho8J\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Rentals</span>\",\"col\":12}},{\"id\":\"c1VMKRgtWf\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Bitcoin\",\"col\":12}},{\"id\":\"mCAc8dm-ii\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Stats</b></span>\",\"col\":12}},{\"id\":\"jUQ0kJEroR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Rentals\",\"col\":4}},{\"id\":\"EO28TtSvDX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Lease Agreements\",\"col\":4}},{\"id\":\"u7dhqmPmcc\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Completed Lease Agreements\",\"col\":4}},{\"id\":\"TooCr3rxJd\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Charts</b></span>\",\"col\":12}},{\"id\":\"RBpHGb6p1k\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Total Revenue\",\"col\":12}},{\"id\":\"wS4DGu6ewG\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Shortcuts</b></span>\",\"col\":12}},{\"id\":\"oF05xsyTa6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicles\",\"col\":3}},{\"id\":\"ZaJzUO6JHi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lease Agreements\",\"col\":3}},{\"id\":\"HFJiUdGm2N\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"FULeA6OQjQ\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"bAYP43ZM2K\",\"type\":\"card\",\"data\":{\"card_name\":\"Rentals\",\"col\":4}},{\"id\":\"VxGpPBm1le\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
+ "creation": "2024-12-22 14:44:56.775226",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Bitcoin",
+   "label": "Bitcoin"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "dashboard-list",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Rentals",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master Data",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Brand Name",
+   "link_count": 0,
+   "link_to": "Vehicle Brand Name",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicles",
+   "link_count": 0,
+   "link_to": "Vehicles",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rentals",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lease Agreement",
+   "link_count": 0,
+   "link_to": "Lease Agreement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Invoice",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Vehicle Utilization Report",
+   "link_count": 0,
+   "link_to": "Vehicle Utilization Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Rental Income Summary",
+   "link_count": 0,
+   "link_to": "Rental Income Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-12-23 01:08:12.995197",
+ "modified_by": "Administrator",
+ "module": "Rental Management Module",
+ "name": "Rentals",
+ "number_cards": [
+  {
+   "label": "Completed Lease Agreements",
+   "number_card_name": "Completed Lease Agreements"
+  },
+  {
+   "label": "Active Lease Agreements",
+   "number_card_name": "Active Lease Agreements"
+  },
+  {
+   "label": "Active Rentals",
+   "number_card_name": "Active Rentals"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Vehicles",
+   "link_to": "Vehicles",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Lease Agreements",
+   "link_to": "Lease Agreement",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Rentals"
+}
